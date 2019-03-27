@@ -41,18 +41,18 @@ const filter = (arr, cb) => {
 // test
 filter(numbers, (val) => {if (val < 6) return true}); //?
 
-const reduce = (arr, cb, initValue) => {
-  initValue;
-  let accumulator = initValue;
-  accumulator;
-
+const reduce = (arr, cb, init) => {
+  let acc = init;
   for (let i = 0; i < arr.length; i++) {
     arr[i]; //?
-    accumulator = cb(accumulator, arr[i], i);
+    acc = cb(acc, arr[i], i);
   }
-  return accumulator;
+  return acc;
 }
+
 // test
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
 reduce(numbers, (acc, val, idx) => {
   acc.values.push(val);
   acc.indexes.push(idx);
