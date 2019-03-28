@@ -28,7 +28,7 @@ function forLoop(arr) {
     console.log(arr[i]);
   }
 };
-forLoop(nums); //?
+// forLoop(nums); //?
 
 // While Loop
 function whileLoop(arr) {
@@ -37,7 +37,7 @@ function whileLoop(arr) {
     console.log(arr[i]); i++;
   }
 }
-whileLoop(nums); //?
+// whileLoop(nums); //?
 
 // .Map
 function map(arr, cb) {
@@ -47,7 +47,7 @@ function map(arr, cb) {
   }
   return newArr;
 }
-map(nums, (num => num += 1)); //?
+// map(nums, (num => num += 1)); //?
 
 // .Filter
 function filter(arr, cb) {
@@ -57,23 +57,21 @@ function filter(arr, cb) {
   }
   return newArr;
 }
-filter(nums, (num => (num %2))); //?
+// filter(nums, (num => (num %2))); //?
 
 // .Reduce
-function reduce(arr) {
-
-}
-reduce(nums, (acc, val, idx => {
-  acc.push(val);
-  acc.push(idx);
+function reduce(arr, cb, initAcc) {
+  let acc = initAcc;
+  for (let i = 0; i < arr.length; i++) {
+    acc = cb(acc, arr[i], i);
+  }
   return acc;
-}), []) //?
+}
+// reduce(nums, ((acc, val, idx) => {
+//   acc.push([val, idx]);
+//   return acc;
+// }), []) //?
 
-forLoop(arr);
-whileLoop(arr);
-map(arr);
-filter(arr);
-reduce(arr);
 
 /*
 ************************************
@@ -104,10 +102,16 @@ const stuff = {
   cars: ['Toyota', 'Mazda']
 }
 
-let state = {};
-let newPeople = [];
-const newStuff = {};
-let newState = {};
+let state = { people: people, stuff: stuff }; //?
+
+let newPeople = ['Odie', ...people, 'Garfield']; //?
+
+const newStuff = {...stuff, cars: [...stuff.cars, 'Subaru']}; //?
+
+let newState = {
+  people: ['Odie', ...state.people, 'Garfield'],
+  stuff: {...state.stuff, cars: [...stuff.cars, 'Subaru']}
+}; //?
 
 
 
