@@ -1,0 +1,59 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  color: #fff;
+}
+
+/* colors */
+body {
+  background: white;
+}
+
+header {
+  background-color: #6773BD;
+}
+
+.left {
+  background-color: #7DC0B1;
+}
+
+.right {
+  background-color: #9DC071;
+}
+
+article {
+  background-color: #D49391;
+}
+
+footer {
+  background-color: #A76DBE;
+}
+
+/* when width > 'mobile L' */
+@media screen and (min-width: 426px) {
+  body {
+    height: 100vh;
+  }
+  header, footer {
+    height: 10vh;
+  }
+  article, .left, .right {
+    height: 80vh;
+  }
+  article {
+    width: 70%;
+    float: right;
+    margin-right: 15%; /* width of .right */
+  }
+  .left {
+    width: 15%;
+    float: left;
+  }
+  .right {
+    width: 15%;
+    float: right;
+    margin-top: -80vh; /* less height of article, .left, .right */
+  }
+  footer {
+    clear: both;
+  }
+}

@@ -1,0 +1,59 @@
+/* colors */
+* {
+  color: #fff;
+  text-align: center;
+}
+body {
+  background: white;
+}
+
+header {
+  background-color: #6773BD;
+}
+
+.left {
+  background-color: #7DC0B1;
+}
+
+.right {
+  background-color: #9DC071;
+}
+
+article {
+  background-color: #D49391;
+}
+
+footer {
+  background-color: #A76DBE;
+}
+
+body {
+  height: 100vh;
+}
+
+body, main {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+header, footer {
+  flex-grow: 1;
+}
+main {
+  flex-grow: 7;
+}
+article {
+  flex-grow: 7;
+}
+.left, .right {
+  flex-grow: 1;
+}
+
+@media screen and (min-width: 426px) {
+  main {
+    flex-flow: row nowrap;
+  }
+  .left {
+    order:-1;
+  }
+}
