@@ -3,7 +3,7 @@
 [7]: https://github.com/401-advanced-javascript-billybunn/warm-ups/pull/2
 [8]: https://github.com/401-advanced-javascript-billybunn/warm-ups/pull/3
 [9]:
-[10]:
+[10]: https://github.com/401-advanced-javascript-billybunn/warm-ups/pull/4
 
 [HG1]: https://github.com/401-advanced-javascript-billybunn/warm-ups/tree/03-25-2019/warmup-01/holy-grail-1
 
