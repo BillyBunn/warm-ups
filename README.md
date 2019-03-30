@@ -27,6 +27,7 @@
 ##### Class 10
 * [PR][10]
 * [Async][A1]
+   * Run with `node warmup-02/async-1.js`
 
 <!-- * [Class 06][6] -->
 <!-- * [Class 06][6] -->
