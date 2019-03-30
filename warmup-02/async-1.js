@@ -5,9 +5,7 @@ const superagent = require('superagent');
 const fetchPeopleWithPromises = () => {
   return superagent.get('https://swapi.co/api/people/')
     .then(response => {
-      const urls = response.body.results.reduce((list, character) => {
-        list.push(character.url); return list;
-      }, []);
+      const urls = response.body.results.map(character => {return character.url});
 
       // Creates an array of Promises
       const requests = urls.map(url => Promise.resolve(superagent.get(url)))
