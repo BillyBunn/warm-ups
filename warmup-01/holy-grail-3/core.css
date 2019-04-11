@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  color: #eee;
+  font-family: Helvetica, sans-serif;
+  font-size: calc(1rem + 1vw);
+}
+
+body>header, body>footer {
+  height: calc(3.5rem + 1vw);
+  line-height: calc(3.5rem + 1vw);
+  text-align: center;
+}
+
+body>header {
+  background: #6773BD;
+}
+
+body>footer {
+  background: #A76DBE;
+}
+
+main {
+  background: #fafafa;
+}
+
+main>.content {
+  background: #D49391;
+  height: 100%;
+}
+
+main>aside {
+  background: #9DC071;
+}
+
+main>nav {
+  background: #7DC0B1;
+}
