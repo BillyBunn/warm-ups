@@ -10,7 +10,7 @@ const fetchPeopleWithPromises = () => {
       // Creates an array of Promises
       const requests = urls.map(url => Promise.resolve(superagent.get(url)))
 
-      // Returns a single Promise when the array of Promises have resolved
+      // Resolves a single Promise when the array of Promises have resolved
       return Promise.all(requests)
         .then(responses => {
           const names = responses.map(response => response.body.name)
