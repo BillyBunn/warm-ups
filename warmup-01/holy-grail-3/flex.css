@@ -1,0 +1,18 @@
+@media (min-width: 960px) {
+  main {
+    align-content: space-around;
+    display: flex;
+    flex-flow: row nowrap;
+    height: calc(100vh - (7rem + 2vw));
+  }
+  main>nav {
+    flex: 1.5;
+  }
+  main>aside {
+    flex: 1.5;
+    order: 3;
+  }
+  main>.content {
+    flex: 7;
+  }
+}
