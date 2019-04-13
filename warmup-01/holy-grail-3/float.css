@@ -1,0 +1,16 @@
+@media (min-width: 960px) {
+  main {
+    height: calc(100vh - (7rem + 2vw));
+    overflow: hidden;
+  }
+  main>nav {
+    float: left;
+    height: 100vh;
+    width: 15vw;
+  }
+  main>aside {
+    float: right;
+    height: 100vh;
+    width: 15vw;
+  }
+}
