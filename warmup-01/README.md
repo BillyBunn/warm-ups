@@ -1,6 +1,6 @@
 [daily]: ../warmup-daily
 
-# Warm Up - HTML/CSS
+# Warm Up: HTML/CSS
 
 ## Setup
 

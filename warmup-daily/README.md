@@ -1,4 +1,4 @@
-# Daily Warmup
+# Warm-Up: Daily
 
 ## Setup
 
