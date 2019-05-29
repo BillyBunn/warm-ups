@@ -41,7 +41,7 @@ This warm-up exercise is intended to make the traversals trivial, so that I can 
 
 One of the biggest strengths of Javascript is its use of and prowesss at asynchronous actions. At the core of this is Promises and async/await.
 
-This challenge requires the use of Promises and Async to fetch and transform remote data—actions which are done daily in production level work.
+This challenge requires the use of Promises and Async to fetch and transform remote data—actions which are done daily in production-level work.
 
 ## Credits
 
