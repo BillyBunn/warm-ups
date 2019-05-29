@@ -11,7 +11,7 @@
 
 # JavaScript Daily Warm-Up Exercises
 
-In order too focus on actual problem-solving in my projects—and not implementation details—I learned that it's critical to maintain a mastery of the JavaScript language fundamentals.
+In order too focus on actual problem-solving in my projects—and not implementation details—I've learned that it's critical to maintain a mastery of the JavaScript language fundamentals.
 
 This repo is a place to store my regular "warm-up" exercises. The intent is to build muscle memory on the core fundamentals of the language and as a JS developer in general. As such, there is one "daily" warmup exercise and four more specific warm-ups which I cycle through each week or so.
 
@@ -41,7 +41,7 @@ This warm-up exercise is intended to make the traversals trivial, so that I can 
 
 One of the biggest strengths of Javascript is its use of and prowesss at asynchronous actions. At the core of this is Promises and async/await.
 
-This challenge requires the use of Promises and Async to fetch and transform remote data—actions which are done daily in production level work.
+This challenge requires the use of Promises and Async to fetch and transform remote data—actions which are done daily in production-level work.
 
 ## Credits
 
