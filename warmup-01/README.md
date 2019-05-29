@@ -4,7 +4,7 @@
 
 ## Setup
 
-- On each day, create a new branch of this repo with the date
+- On each day, create a new branch of this repository with the date
   - e.g., `11-22-2018`
 - Create a folder with the same date name
   - e.g., `11-22-2018/`

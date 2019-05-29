@@ -4,7 +4,7 @@
 
 ## Setup
 
-- On each day, create a new branch of this repo with the date
+- On each day, create a new branch of this repository with the date
   - e.g., `11-22-2018`
 - Create a JS folder with the same date name
   - e.g., `11-22-2018/`
@@ -26,7 +26,7 @@ The goal for this exercise is to build up muscle memory on basic server setup an
 - Has a separate `routes.js` file for serving custom routes
   - handles a GET on '/' with a simple response of 'hello'
   - handles a POST on '/save' with a JSON response containing the data posted to the server
-- Handles 404's by serving the usera a custom page (.ejs)
+- Handles 404's by serving the user a a custom page (.ejs)
 - Handles Errors by serving the user a custom page (.ejs)
   - log the actual error to the console
 - Deploy to Heroku, via your master branch
