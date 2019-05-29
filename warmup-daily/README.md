@@ -8,6 +8,7 @@
   - e.g., `11-22-2018.js`
 - Follow the instructions below in that file (also included as comments inside the template file)
 - Timebox this to 15 minutes
+- Create a PR from that branch to master
 
 ## Warm-Up Exercises
 
