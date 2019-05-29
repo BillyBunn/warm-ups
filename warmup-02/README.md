@@ -6,8 +6,8 @@
 
 - On each day, create a new branch of this repo with the date
   - e.g., `11-22-2018`
-- Create a JS file with the same date name
-  - e.g., `11-22-2018.js`
+- Create a JS folder with the same date name
+  - e.g., `11-22-2018/`
 - Follow the instructions below in that folder
 - Timebox this to 1 hour
 - Create a PR from that branch to master
