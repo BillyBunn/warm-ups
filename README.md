@@ -15,9 +15,11 @@ In order too focus on actual problem-solving—and not implementation details—
 
 This repo is a place to store my regular "warm-up" exercises. The intent is to build muscle memory on some the core fundamentals of the language and as a JS developer in general. As such, there is one "daily" warmup exercise and four more specific warm-ups which I cycle through each week or so.
 
+## Warm-Ups
+
 Navigate to the linked folders below for specifics on each warm-up exercise.
 
-### [Daily Warmup][daily]
+### 00 - [Daily Warmup][daily]
 
 Work with arrays, functions, looping, and objects. Implement spread, deconstruction techniques along with map, filter and reduce.
 
@@ -41,6 +43,6 @@ One of the biggest strengths of Javascript is its use of and prowesss at asynchr
 
 This challenge requires the use of Promises and Async to fetch and transform remote data—actions which are done daily in production level work.
 
-### Credits
+## Credits
 
 I've based this routine on [assignments][original] created by my former instructor, [John Cokos][john's github], and adapted them for my own purposes.
