@@ -24,6 +24,6 @@ Having a fingertips ready scaffold of a core web layout, with responsive rules, 
 - Block out all of the sections as shown (no content required)
 - Desktop View: Render as shown
 - Mobile View: Stack: Header -> Content -> Left -> Right -> Footer
-- Header: Add a Horizontal Menu, transform to hamburger
+<!-- - Header: Add a Horizontal Menu, transform to hamburger -->
 
 ![Holy Grail](assets/holy-grail-layout.png)
