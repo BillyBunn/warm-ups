@@ -1,0 +1,20 @@
+@media (min-width: 960px) {
+  body > main {
+    height: calc(100% - ((3.5rem + 1vw) * 2));
+  }
+
+  main > * {
+    height: 100%;
+  }
+
+  main > nav {
+    height: 100%;
+    float: left;
+    width: 15vw;
+  }
+
+  main > aside {
+    float: right;
+    width: 15vw;
+  }
+}

@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  color: #eee;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+body > * {
+  border: 1px solid #000;
+}
+
+body > header {
+  background: lightblue;
+  height: calc(3.5rem + 1vw);
+  line-height: calc(3.5rem + 1vw);
+}
+
+/* body > main, */
+main > content {
+  height: 100%;
+}
+
+main > nav {
+  background: turquoise;
+}
+
+main > aside {
+  background: lightgreen;
+}
+
+main > div {
+  background: lightcoral;
+}
+
+body > footer {
+  background: plum;
+  height: calc(3.5rem + 1vw);
+  line-height: calc(3.5rem + 1vw);
+}
