@@ -1,0 +1,22 @@
+@media (min-width: 960px) {
+  body > main {
+    display: flex;
+    flex-flow: row nowrap;
+    height: calc(100% - ((3.5rem + 1vw) * 2));
+    width: 100%;
+  }
+
+  main > nav {
+    flex: 1.5;
+  }
+
+  main > aside {
+    order: 1;
+    flex: 1.5;
+  }
+
+  main > div {
+    /* order: 0; */
+    flex: 7;
+  }
+}
