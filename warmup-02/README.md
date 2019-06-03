@@ -21,13 +21,13 @@ The goal for this exercise is to build up muscle memory on basic server setup an
 #### Create
 
 - Build an express web server. From Scratch. By Hand.
-- Listens on `process.env.PORT`
-- Serves static files from a folder called `./public`
+- Listens on `process.env.PORT`<sup>[1](#resources)</sup>
+- Serves static files from a folder called `./public`<sup>[2](#resources)</sup>
 - Has a separate `routes.js` file for serving custom routes
-  - handles a GET on '/' with a simple response of 'hello'
-  - handles a POST on '/save' with a JSON response containing the data posted to the server
-- Handles 404's by serving the user a a custom page (.ejs)
-- Handles Errors by serving the user a custom page (.ejs)
+  - handles a GET on '/' with a simple response of 'hello'<sup>[3](#resources)</sup>
+  - handles a POST on '/save' with a JSON response containing the data posted to the server<sup>[4](#resources)</sup>
+- Handles 404's<sup>[6](#resources)</sup> by serving the user a a custom page (.ejs<sup>[5](#resources)</sup>)
+- Handles Errors<sup>[7](#resources)</sup> by serving the user a custom page (.ejs<sup>[5](#resources)</sup>)
   - log the actual error to the console
 - Deploy to Heroku, via your master branch
 
@@ -36,3 +36,27 @@ The goal for this exercise is to build up muscle memory on basic server setup an
 - Write tests for each route, the 404 page, and a simulated error
   - Use supertest
 - Confirm tests passing at Travis, via the master branch
+
+### Resources
+
+1. [`dotenv` usage][dotenv]
+2. [Serving static files][static]
+3. [Basic routing in Express][routing]
+4. JSON in Express
+   - [`express.json` for requests with JSON payloads][express.json]
+   - [`res.json` for JSON responses][res.json]
+   - [`serve-static` middleware][serve-static]
+5. [EJS with Express][ejs]
+6. [Handling 404 responses][404]
+7. [Error handling][500]
+
+<!-- Resource links -->
+[dotenv]: https://github.com/motdotla/dotenv#usage
+[static]: https://expressjs.com/en/starter/static-files.html
+[routing]: https://expressjs.com/en/starter/basic-routing.html
+[express.json]: https://expressjs.com/en/api.html#express.json
+[serve-static]: https://expressjs.com/en/resources/middleware/serve-static.html
+[res.json]: https://expressjs.com/en/api.html#res.json
+[ejs]: https://github.com/mde/ejs/wiki/Using-EJS-with-Express
+[404]: https://expressjs.com/en/starter/faq.html#how-do-i-handle-404-responses
+[500]: https://expressjs.com/en/starter/faq.html#how-do-i-setup-an-error-handler
