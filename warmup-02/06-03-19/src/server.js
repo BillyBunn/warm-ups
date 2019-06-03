@@ -13,6 +13,9 @@ const app = express();
 // Gets the port number from the env variables
 const PORT = process.env.PORT || 3000;
 
+// Brings in the routes from the routes.js file
+const routes = require('./routes');
+
 // MIDDLEWARE ----------------------------------------
 // Serves static files (images, CSS files, and JavaScript files) from the 'public' directory
 app.use(express.static('public'));
@@ -21,15 +24,8 @@ app.use(express.static('public'));
 app.use(express.json());
 
 // ROUTES ----------------------------------------
-app.get('/', (req, res) => res.send('Hello'));
-
-// POST route with a JSON response containing the data posted to the server
-app.post('/save', (req, res) => {
-  res.json(req.body);
-});
-
-// Route test the error handler
-app.get('/foo', (req, res, next) => next('foo'));
+// First checks all routes imported from routes.js
+app.use(routes);
 
 // Catch-all route, 404
 app.get('*', (req, res) => {
@@ -45,6 +41,7 @@ app.use((err, req, res, next) => {
 // START ----------------------------------------
 // Starts a UNIX socket and listens for connections on the given path, logs to console
 // https://expressjs.com/en/api.html#app.listen_path_callback
+// Exports a 'start' function that's called in index.js, the entry point
 module.exports = {
   start: () => app.listen(PORT, () => console.log(`Server up on PORT ${PORT}`))
 };
