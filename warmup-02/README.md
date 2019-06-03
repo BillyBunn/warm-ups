@@ -19,26 +19,30 @@
 The goal for this exercise is to build up muscle memory on basic server setup and operations. You'll be tasked with creating servers many times during your career and in projects. This should be the type of thing that you can construct nearly blindfolded, to give yourself a stable starting point from which to do your actual work.
 
 #### Create
+
 <!-- Resource links -->
+
 [dotenv]: https://github.com/motdotla/dotenv#usage
+[static]: https://expressjs.com/en/starter/static-files.html
+[routing]: https://expressjs.com/en/starter/basic-routing.html
+[express.json]: https://expressjs.com/en/api.html#express.json
+[serve-static]: https://expressjs.com/en/resources/middleware/serve-static.html
+[res.json]: https://expressjs.com/en/api.html#res.json
+[ejs]: https://github.com/mde/ejs/wiki/Using-EJS-with-Express
+[404]: https://expressjs.com/en/starter/faq.html#how-do-i-handle-404-responses
+[500]: https://expressjs.com/en/starter/faq.html#how-do-i-setup-an-error-handler
 
 - Build an express web server. From Scratch. By Hand.
 - Listens on `process.env.PORT`<sup>[1](#resources)</sup>
-- Serves static files from a folder called `./public`
-   - https://expressjs.com/en/starter/static-files.html
+- Serves static files from a folder called `./public`<sup>[2](#resources)</sup>
 - Has a separate `routes.js` file for serving custom routes
-  - handles a GET on '/' with a simple response of 'hello'
-     - https://expressjs.com/en/starter/basic-routing.html
-  - handles a POST on '/save' with a JSON response containing the data posted to the server
-     - https://expressjs.com/en/api.html#express.json
-     - https://expressjs.com/en/resources/middleware/serve-static.html
-     - https://expressjs.com/en/api.html#res.json
-- Handles 404's by serving the user a a custom page (.ejs)
-  - https://github.com/mde/ejs/wiki/Using-EJS-with-Express
-  - https://expressjs.com/en/starter/faq.html#how-do-i-handle-404-responses
-- Handles Errors by serving the user a custom page (.ejs)
+
+  - handles a GET on '/' with a simple response of 'hello'<sup>[3](#resources)</sup>
+  - handles a POST on '/save' with a JSON response containing the data posted to the server<sup>[4](#resources)</sup>
+
+- Handles 404's<sup>[6](#resources)</sup> by serving the user a a custom page (.ejs<sup>[5](#resources)</sup>)
+- Handles Errors<sup>[7](#resources)</sup> by serving the user a custom page (.ejs<sup>[5](#resources)</sup>)
   - log the actual error to the console
-  - https://expressjs.com/en/starter/faq.html#how-do-i-setup-an-error-handler
 - Deploy to Heroku, via your master branch
 
 #### Test
@@ -48,5 +52,14 @@ The goal for this exercise is to build up muscle memory on basic server setup an
 - Confirm tests passing at Travis, via the master branch
 
 ### Resources
-- [`dotenv` usage][dotenv]
-- [thing](#dotenv)
+
+1. [`dotenv` usage][dotenv]
+2. [Serving static files][static]
+3. [Basic routing in Express][routing]
+4. JSON in Express
+   - [`express.json` for requests with JSON payloads][express.json]
+   - [`res.json` for JSON responses][res.json]
+   - [`serve-static` middleware][serve-static]
+5. [EJS with Express][ejs]
+6. [Handling 404 responses][404]
+7. [Error handling][500]
