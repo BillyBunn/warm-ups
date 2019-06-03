@@ -19,10 +19,11 @@
 The goal for this exercise is to build up muscle memory on basic server setup and operations. You'll be tasked with creating servers many times during your career and in projects. This should be the type of thing that you can construct nearly blindfolded, to give yourself a stable starting point from which to do your actual work.
 
 #### Create
+<!-- Resource links -->
+[dotenv]: https://github.com/motdotla/dotenv#usage
 
 - Build an express web server. From Scratch. By Hand.
-- Listens on `process.env.PORT`
-   - https://github.com/motdotla/dotenv#usage
+- Listens on `process.env.PORT`<sup>[1](#dotenv)</sup>
 - Serves static files from a folder called `./public`
    - https://expressjs.com/en/starter/static-files.html
 - Has a separate `routes.js` file for serving custom routes
@@ -45,3 +46,7 @@ The goal for this exercise is to build up muscle memory on basic server setup an
 - Write tests for each route, the 404 page, and a simulated error
   - Use supertest
 - Confirm tests passing at Travis, via the master branch
+
+### Resources
+- [`dotenv` usage][dotenv]
+- [thing](#dotenv)
