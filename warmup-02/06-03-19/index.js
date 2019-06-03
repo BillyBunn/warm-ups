@@ -23,8 +23,8 @@ app.get('/', (req, res) => res.send('Hello'));
 
 // POST route with a JSON response containing the data posted to the server
 app.post('/save', (req, res) => {
-  res.json(req.body)
-})
+  res.json(req.body);
+});
 
 // Route test the error handler
 app.get('/foo', (req, res, next) => next('foo'));
@@ -40,5 +40,7 @@ app.use((err, req, res, next) => {
   res.status(500).send('500 server error');
 });
 
-// Gets the server up and running
+// START ----------------------------------------
+// Starts a UNIX socket and listens for connections on the given path, logs to console
+// https://expressjs.com/en/api.html#app.listen_path_callback
 app.listen(PORT, () => console.log(`Server up on PORT ${PORT}`));
