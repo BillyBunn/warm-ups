@@ -26,7 +26,6 @@ The goal for this exercise is to build up muscle memory on basic server setup an
 - Has a separate `routes.js` file for serving custom routes
   - handles a GET on '/' with a simple response of 'hello'<sup>[3](#resources)</sup>
   - handles a POST on '/save' with a JSON response containing the data posted to the server<sup>[4](#resources)</sup>
-
 - Handles 404's<sup>[6](#resources)</sup> by serving the user a a custom page (.ejs<sup>[5](#resources)</sup>)
 - Handles Errors<sup>[7](#resources)</sup> by serving the user a custom page (.ejs<sup>[5](#resources)</sup>)
   - log the actual error to the console
