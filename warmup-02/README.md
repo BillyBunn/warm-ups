@@ -23,7 +23,7 @@ The goal for this exercise is to build up muscle memory on basic server setup an
 [dotenv]: https://github.com/motdotla/dotenv#usage
 
 - Build an express web server. From Scratch. By Hand.
-- Listens on `process.env.PORT`<sup>[1](#dotenv)</sup>
+- Listens on `process.env.PORT`<sup>[1](#resources)</sup>
 - Serves static files from a folder called `./public`
    - https://expressjs.com/en/starter/static-files.html
 - Has a separate `routes.js` file for serving custom routes
