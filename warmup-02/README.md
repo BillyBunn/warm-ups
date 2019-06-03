@@ -22,13 +22,21 @@ The goal for this exercise is to build up muscle memory on basic server setup an
 
 - Build an express web server. From Scratch. By Hand.
 - Listens on `process.env.PORT`
+   - https://github.com/motdotla/dotenv#usage
 - Serves static files from a folder called `./public`
+   - https://expressjs.com/en/starter/static-files.html
 - Has a separate `routes.js` file for serving custom routes
   - handles a GET on '/' with a simple response of 'hello'
+     - https://expressjs.com/en/starter/basic-routing.html
   - handles a POST on '/save' with a JSON response containing the data posted to the server
+     - https://expressjs.com/en/api.html#express.json
+     - https://expressjs.com/en/resources/middleware/serve-static.html
+     - https://expressjs.com/en/api.html#res.json
 - Handles 404's by serving the user a a custom page (.ejs)
+  - https://expressjs.com/en/starter/faq.html#how-do-i-handle-404-responses
 - Handles Errors by serving the user a custom page (.ejs)
   - log the actual error to the console
+  - https://expressjs.com/en/starter/faq.html#how-do-i-setup-an-error-handler
 - Deploy to Heroku, via your master branch
 
 #### Test
