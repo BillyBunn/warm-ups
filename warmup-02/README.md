@@ -20,23 +20,10 @@ The goal for this exercise is to build up muscle memory on basic server setup an
 
 #### Create
 
-<!-- Resource links -->
-
-[dotenv]: https://github.com/motdotla/dotenv#usage
-[static]: https://expressjs.com/en/starter/static-files.html
-[routing]: https://expressjs.com/en/starter/basic-routing.html
-[express.json]: https://expressjs.com/en/api.html#express.json
-[serve-static]: https://expressjs.com/en/resources/middleware/serve-static.html
-[res.json]: https://expressjs.com/en/api.html#res.json
-[ejs]: https://github.com/mde/ejs/wiki/Using-EJS-with-Express
-[404]: https://expressjs.com/en/starter/faq.html#how-do-i-handle-404-responses
-[500]: https://expressjs.com/en/starter/faq.html#how-do-i-setup-an-error-handler
-
 - Build an express web server. From Scratch. By Hand.
 - Listens on `process.env.PORT`<sup>[1](#resources)</sup>
 - Serves static files from a folder called `./public`<sup>[2](#resources)</sup>
 - Has a separate `routes.js` file for serving custom routes
-
   - handles a GET on '/' with a simple response of 'hello'<sup>[3](#resources)</sup>
   - handles a POST on '/save' with a JSON response containing the data posted to the server<sup>[4](#resources)</sup>
 
@@ -63,3 +50,14 @@ The goal for this exercise is to build up muscle memory on basic server setup an
 5. [EJS with Express][ejs]
 6. [Handling 404 responses][404]
 7. [Error handling][500]
+
+<!-- Resource links -->
+[dotenv]: https://github.com/motdotla/dotenv#usage
+[static]: https://expressjs.com/en/starter/static-files.html
+[routing]: https://expressjs.com/en/starter/basic-routing.html
+[express.json]: https://expressjs.com/en/api.html#express.json
+[serve-static]: https://expressjs.com/en/resources/middleware/serve-static.html
+[res.json]: https://expressjs.com/en/api.html#res.json
+[ejs]: https://github.com/mde/ejs/wiki/Using-EJS-with-Express
+[404]: https://expressjs.com/en/starter/faq.html#how-do-i-handle-404-responses
+[500]: https://expressjs.com/en/starter/faq.html#how-do-i-setup-an-error-handler
