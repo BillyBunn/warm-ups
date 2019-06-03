@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>404 File Not Found</title>
+  </head>
+  <body>
+    <h1>404 File Not Found</h1>
+    <p>Couldn't find the path <%= request.path %></p>
+    <table>
+      <thead>
+        <th>property</th>
+        <th>value</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>url</td>
+          <td><%= request.url %></td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td><%= request.method %></td>
+        </tr>
+        <tr>
+          <td>statusCode:</td>
+          <td><%= request.statusCode %></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -16,6 +16,11 @@ const PORT = process.env.PORT || 3000;
 // Brings in the routes from the routes.js file
 const routes = require('./routes');
 
+// Configures the default view engine extension to use .ejs
+app.set('view engine', 'ejs');
+// app.set('views', `${__dirname}/views`);
+
+
 // MIDDLEWARE ----------------------------------------
 // Serves static files (images, CSS files, and JavaScript files) from the 'public' directory
 app.use(express.static('public'));
@@ -29,13 +34,16 @@ app.use(routes);
 
 // Catch-all route, 404
 app.get('*', (req, res) => {
-  res.status(404).send('404 page not found');
+  res.status(404);
+  res.render(`${__dirname}/views/404`, { request: req });
 });
 
 // Error route, 500
 app.use((err, req, res, next) => {
   console.error(err.stack);
-  res.status(500).send('500 server error');
+  res.status(500);
+  // res.send('500 server error');
+  res.render(`${__dirname}/views/500`, { request: req, error: err });
 });
 
 // START ----------------------------------------
