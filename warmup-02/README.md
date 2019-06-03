@@ -33,6 +33,7 @@ The goal for this exercise is to build up muscle memory on basic server setup an
      - https://expressjs.com/en/resources/middleware/serve-static.html
      - https://expressjs.com/en/api.html#res.json
 - Handles 404's by serving the user a a custom page (.ejs)
+  - https://github.com/mde/ejs/wiki/Using-EJS-with-Express
   - https://expressjs.com/en/starter/faq.html#how-do-i-handle-404-responses
 - Handles Errors by serving the user a custom page (.ejs)
   - log the actual error to the console
