@@ -1,1 +1,1 @@
-// Process a Stack in the correct order
+// Process a Queue in the correct order
